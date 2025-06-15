@@ -6,7 +6,7 @@ Note on Collaboration: This was a group project completed as part of the Machine
 📄 [Read the Full Case Study Report (PDF)](Application_of_CNN_in_Medical_Image_Classification.pdf)
 
 
-(A placeholder for a visual showing sample X-ray images from the dataset. You can generate this from the notebook.)
+[Data Visualization](images/Data_Visualization.png)
 
 📜 Project Overview
 The goal of this project was to build and evaluate a deep learning model capable of assisting in medical diagnosis by automatically classifying chest X-ray images. We utilized a custom-built CNN architecture to learn distinguishing features from the image data.
