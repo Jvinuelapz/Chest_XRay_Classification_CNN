@@ -1,74 +1,71 @@
 # CNN for Chest X-Ray Classification (COVID-19, Pneumonia, Normal)
+
 This repository contains a case study on the application of Convolutional Neural Networks (CNNs) for classifying medical images. The model is trained to distinguish between chest X-rays of patients with COVID-19, Pneumonia, and healthy (Normal) individuals.
 
-Note on Collaboration: This was a group project completed as part of the Machine Learning course (CS7052) at London Metropolitan University. This repository contains my specific contributions to the project, including the code for data processing, model development, and performance analysis, as detailed in the accompanying Jupyter Notebook. My analysis and commentary are attributed to "Jorge V. Perez" in the final report.
+**Note on Collaboration:** This was a group project completed as part of the Machine Learning course (CS7052) at London Metropolitan University. This repository contains my specific contributions to the project, including the code for data processing, model development, and performance analysis, as detailed in the accompanying Jupyter Notebook. My analysis and commentary are attributed to "Jorge V. Perez" in the final report.
 
-📄 [Read the Full Case Study Report (PDF)](Application_of_CNN_in_Medical_Image_Classification.pdf)
-
+📄 **[Read the Full Case Study Report (PDF)](./Application_of_CNN_in_Medical_Image_Classification.pdf)**
 
 ![Data Visualization](./images/Data_Visualization.png)
 
-📜 Project Overview
+## 📜 Project Overview
+
 The goal of this project was to build and evaluate a deep learning model capable of assisting in medical diagnosis by automatically classifying chest X-ray images. We utilized a custom-built CNN architecture to learn distinguishing features from the image data.
 
-My key contributions, demonstrated in the CourseWork.ipynb notebook, include:
+My key contributions, demonstrated in the `XRay_CNN.ipynb` notebook, include:
 
-- Data Augmentation: Implemented ImageDataGenerator with various transformations (shear, zoom, rotation, flips) to expand the training dataset and improve model generalization.
+- **Data Augmentation:** Implemented `ImageDataGenerator` with various transformations (shear, zoom, rotation, flips) to expand the training dataset and improve model generalization.
+- **Model Architecture:** Designed a sequential CNN model using TensorFlow/Keras with multiple convolutional, max-pooling, and dense layers, incorporating dropout for regularization.
+- **Training & Evaluation:** Trained the model for 20 epochs with `EarlyStopping` and `ModelCheckpoint` callbacks.
+- **Performance Analysis:** Evaluated the model's performance by plotting accuracy/loss curves and generating a confusion matrix to analyze its classification effectiveness.
 
-- Model Architecture: Designed a sequential CNN model using TensorFlow/Keras with multiple convolutional, max-pooling, and dense layers, incorporating dropout for regularization.
+---
 
-- Training & Evaluation: Trained the model for 20 epochs with EarlyStopping and ModelCheckpoint callbacks.
+## 🛠️ Technologies & Libraries
 
-- Performance Analysis: Evaluated the model's performance by plotting accuracy/loss curves and generating a confusion matrix to analyze its classification effectiveness.
+- **Python 3.9**
+- **TensorFlow & Keras:** For building, training, and evaluating the CNN model.
+- **KaggleHub:** For downloading the dataset.
+- **Scikit-learn:** For generating and displaying the confusion matrix.
+- **NumPy:** For numerical operations.
+- **Matplotlib:** For data visualization.
+- **Jupyter Notebook:** For interactive development and analysis.
 
-🛠️ Technologies & Libraries
-- Python 3.9
+---
 
-- TensorFlow & Keras: For building, training, and evaluating the CNN model.
+## ⚙️ Setup and Usage
 
-- KaggleHub: For downloading the dataset.
-
-- Scikit-learn: For generating and displaying the confusion matrix.
-
-- NumPy: For numerical operations.
-
-- Matplotlib: For data visualization.
-
-- Jupyter Notebook: For interactive development and analysis.
-
-⚙️ Setup and Usage
 To replicate this project, follow the steps below:
 
-1. Clone the Repository:
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
+    ```
 
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-```
+2.  **Set Up a Virtual Environment:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
 
-2. Set Up a Virtual Environment:
+3.  **Install Dependencies:**
+    All required libraries are listed in the `requirements.txt` file.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+4.  **Run the Notebook:**
+    Launch Jupyter and open `XRay_CNN.ipynb` to see the complete workflow, from data loading to model evaluation.
+    ```bash
+    jupyter notebook XRay_CNN.ipynb
+    ```
 
-3. Install Dependencies: All required libraries are listed in the requirements.txt file.
+---
 
-```bash
-pip install -r requirements.txt
-```
+## 🗂️ Repository Structure
 
-4. Run the Notebook:
-Launch Jupyter and open CourseWork.ipynb to see the complete workflow, from data loading to model evaluation.
-
-jupyter notebook CourseWork.ipynb
-
-🗂️ Repository Structure
-- Application_of_CNN_in_Medical_Image_Classification.pdf: The complete case study report.
-
-- XRay_CNN.ipynb: The Jupyter Notebook containing my code and analysis.
-
-- requirements.txt: A list of all necessary Python dependencies.
-
-- .gitignore: Specifies files and directories to be ignored by Git.
+- `Application_of_CNN_in_Medical_Image_Classification.pdf`: The complete case study report.
+- `XRay_CNN.ipynb`: The Jupyter Notebook containing my code and analysis.
+- `requirements.txt`: A list of all necessary Python dependencies.
+- `.gitignore`: Specifies files and directories to be ignored by Git.
