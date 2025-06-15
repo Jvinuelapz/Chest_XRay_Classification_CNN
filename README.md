@@ -65,9 +65,9 @@ Launch Jupyter and open CourseWork.ipynb to see the complete workflow, from data
 jupyter notebook CourseWork.ipynb
 
 🗂️ Repository Structure
-- 23038621_Case_Study_Report_24.pdf: The complete case study report.
+- Application_of_CNN_in_Medical_Image_Classification.pdf: The complete case study report.
 
-- CourseWork.ipynb: The Jupyter Notebook containing my code and analysis.
+- XRay_CNN.ipynb: The Jupyter Notebook containing my code and analysis.
 
 - requirements.txt: A list of all necessary Python dependencies.
 
