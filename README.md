@@ -3,7 +3,7 @@ This repository contains a case study on the application of Convolutional Neural
 
 Note on Collaboration: This was a group project completed as part of the Machine Learning course (CS7052) at London Metropolitan University. This repository contains my specific contributions to the project, including the code for data processing, model development, and performance analysis, as detailed in the accompanying Jupyter Notebook. My analysis and commentary are attributed to "Jorge V. Perez" in the final report.
 
-📄 [Read the Full Case Study Report (PDF)]()
+📄 [Read the Full Case Study Report (PDF)](Application_of_CNN_in_Medical_Image_Classification.pdf)
 
 
 (A placeholder for a visual showing sample X-ray images from the dataset. You can generate this from the notebook.)
